@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST" action="register">
+        {% csrf_token %}
+        <h3>Регистрация</h3>
+        <table>{{register_form}}</table>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</body>
+</html>
